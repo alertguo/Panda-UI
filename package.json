@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/alertguo/Panda-UI/issues"
   },
-  "homepage": "https://github.com/alertguo/Panda-UI#readme"
+  "homepage": "https://github.com/alertguo/Panda-UI#readme",
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
 }
