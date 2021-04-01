@@ -11,7 +11,13 @@
 
 <script>
 export default {
-  props: ['icon', 'iconPosition']
+  props: {
+    icon: {},
+    iconPosition: {
+      type: String,
+      default: 'left',
+    }
+  }
 }
 </script>
 
@@ -40,19 +46,23 @@ export default {
   &:focus {
     outline: none;
   }
+
   > .icon {
     order: 1;
     margin-right: .1em;
   }
+
   > .content {
     order: 2;
   }
-  &.icon-right{
-    > .icon{
+
+  &.icon-right {
+    > .icon {
       order: 2;
       margin-right: 0;
       margin-left: .1em;
     }
+
     > .content {
       order: 1;
     }
