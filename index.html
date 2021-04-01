@@ -7,7 +7,11 @@
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <title>熊猫 UI</title>
   <style>
-    *{margin: 0; padding: 0; box-sizing: border-box;}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     :root {
       --button-height: 32px;
       --font-size: 14px;
@@ -25,14 +29,23 @@
       font-size: var(--font-size);
     }
   </style>
-  <style>
-
+  <style type="text/css">
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
   </style>
 </head>
 <body>
 <div id="app">
-  <g-button></g-button>
+  <g-button>
+    按钮
+  </g-button>
 </div>
 <script src="./src/app.js"></script>
+<script src="//at.alicdn.com/t/font_2460755_yn43naf6v8d.js"></script>
 </body>
 </html>
