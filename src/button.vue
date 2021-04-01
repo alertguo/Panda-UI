@@ -1,14 +1,18 @@
 <template>
-  <button class="g-button">
-    <svg class="icon">
-      <use xlink:href="#i-setting"></use>
+  <button :class="{[`icon-${iconPosition}`]:true}" class="g-button">
+    <svg v-if="icon" class="icon">
+      <use :xlink:href=`#i-${icon}`></use>
     </svg>
-    <slot></slot>
+    <div class="content">
+      <slot></slot>
+    </div>
   </button>
 </template>
 
 <script>
-export default {}
+export default {
+  props: ['icon', 'iconPosition']
+}
 </script>
 
 <style lang="scss" scoped>
@@ -19,6 +23,10 @@ export default {}
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
   background: var(--button-bg);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
 
   &:hover {
     background-color: var(--border-color-hover);
@@ -31,6 +39,23 @@ export default {}
   /*去掉点击时的蓝色框*/
   &:focus {
     outline: none;
+  }
+  > .icon {
+    order: 1;
+    margin-right: .1em;
+  }
+  > .content {
+    order: 2;
+  }
+  &.icon-right{
+    > .icon{
+      order: 2;
+      margin-right: 0;
+      margin-left: .1em;
+    }
+    > .content {
+      order: 1;
+    }
   }
 }
 </style>
