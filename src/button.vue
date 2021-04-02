@@ -48,7 +48,7 @@ export default {
   justify-content: center;
   align-items: center;
   //为了与外部的东西对齐
-  vertical-align: top;
+  vertical-align: middle;
 
   &:hover {
     background-color: var(--border-color-hover);
