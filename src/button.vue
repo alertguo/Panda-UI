@@ -2,7 +2,7 @@
   <button :class="{[`icon-${iconPosition}`]:true}" class="g-button">
     <g-icon v-if="icon" :name="icon" class="icon"></g-icon>
     <div class="content">
-      <slot></slot>
+      <slot/>
     </div>
   </button>
 </template>
