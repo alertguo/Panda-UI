@@ -1478,6 +1478,11 @@ caseless@~0.12.0:
   resolved "https://registry.npm.taobao.org/caseless/download/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
+chai-spies@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/chai-spies/download/chai-spies-1.0.0.tgz#d16b39336fb316d03abf8c375feb23c0c8bb163d"
+  integrity sha1-0Ws5M2+zFtA6v4w3X+sjwMi7Fj0=
+
 chai@^4.3.4:
   version "4.3.4"
   resolved "https://registry.npm.taobao.org/chai/download/chai-4.3.4.tgz?cache=0&sync_timestamp=1615568285172&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchai%2Fdownload%2Fchai-4.3.4.tgz#b55e655b31e1eac7099be4c08c21964fce2e6c49"
