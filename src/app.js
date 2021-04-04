@@ -88,3 +88,20 @@ const expect = chai.expect
   vm.$el.remove()
   vm.$destroy()
 }
+// 测 click
+{
+  const Constructor = Vue.extend(Button)
+  const vm = new Constructor({
+    propsData: {
+      icon: 'setting',
+    }
+  })
+  vm.$mount()
+  vm.$on('click',function(){
+    expect(1).to.eq(1)
+  })
+  let button = vm.$el
+  button.click()
+  vm.$el.remove()
+  vm.$destroy()
+}
