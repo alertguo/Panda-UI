@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/Panda-UI/',
   title: '熊猫 UI',
   description: '一个好用的 UI ',
   themeConfig: {
