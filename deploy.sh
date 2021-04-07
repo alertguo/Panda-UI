@@ -22,4 +22,7 @@ git commit -m 'deploy'
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
  git push -f git@github.com:alertguo/Panda-UI.git master:gh-pages
 
+ # 发布到 gitee
+ #  git push -f git@gitee.com:alertguo/panda-ui.git master:gh-pages
+
 cd -
