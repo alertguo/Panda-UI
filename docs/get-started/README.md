@@ -9,7 +9,7 @@ title: 快速上手
 
 ## 基本使用
 ### 示例：引入 Button 到自己组件
-```
+``` js
 import {Button} from 'panda-ui-vue2'
 import Vue from 'vue'
 
