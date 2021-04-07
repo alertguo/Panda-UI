@@ -11,12 +11,12 @@ title: 快速上手
 ### 示例：引入 Button 到自己组件
 ``` js
 import {Button} from 'panda-ui-vue2'
-import Vue from 'vue'
+import 'panda-ui-vue2/dist/index.css'
 
-new Vue({
-  el: '#app',
+export default {
+  name: '#app',
   components: {
     'g-button':Button
   }
-})
+}
 ```
