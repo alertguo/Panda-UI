@@ -6,7 +6,7 @@
     </label>
 <!--    直接使用template，可以少一个div，也不用另外加样式-->
     <template v-if="error">
-      <g-icon name="setting"></g-icon>
+      <g-icon name="error" class="icon-error"></g-icon>
       <span class="errorMassage">{{error}}</span>
     </template>
   </div>
@@ -81,6 +81,13 @@
     }
     &.error {
       > label > input { border-color: $red; }
+    }
+    .icon-error {
+      fill: $red;
+      margin: 5px;
+    }
+    .errorMassage {
+      color: red;
     }
   }
 </style>
