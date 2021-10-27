@@ -62,7 +62,9 @@ $red: #F1453D;
   font-size: $font-size;
   display: inline-flex;
   align-items: center;
-
+  :not(:last-child) {
+    margin-right: .5em;
+  }
   > label {
     > input {
       height: 32px;
@@ -96,7 +98,6 @@ $red: #F1453D;
 
   .icon-error {
     fill: $red;
-    margin: 5px;
   }
 
   .errorMassage {
