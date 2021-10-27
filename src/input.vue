@@ -2,9 +2,12 @@
   <div class="wrapper" :class="{'error':error}">
     <label>
 <!--      value-值-->
-
       <input :value="value" type="text" :disabled="disabled" :readonly="readonly">
     </label>
+    <template v-if="error">
+      <g-icon name="setting"></g-icon>
+      <span class="errorMassage">{{error}}</span>
+    </template>
   </div>
 </template>
 
@@ -17,9 +20,13 @@
 <!--  }-->
 <!--</script>-->
 <script>
+  import Icon from './icon'
   export default {
     // 添加name只是方便调试，google使用Vue插件方便看到
     name: 'GuluInput',
+    components: {
+      'g-icon': Icon
+    },
     props: {
       value: {
         type: String
