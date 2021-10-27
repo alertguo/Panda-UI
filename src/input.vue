@@ -1,7 +1,6 @@
 <template>
-  <div :class="{'error':error}" class="wrapper">
+  <div :class="{error}" class="wrapper">
     <label>
-      <!--      value-值-->
       <input :disabled="disabled" :readonly="readonly" :value="value" type="text"
              @blur="$emit('blur',$event.target.value)"
              @change="$emit('change',$event.target.value)"
