@@ -8,7 +8,7 @@
     name: 'GuluButtonGroup'
   }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 $border-radius: 4px;
 
 .g-button-group {
