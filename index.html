@@ -32,19 +32,27 @@
 </head>
 <body>
 <div id="app">
-  <g-button :loading="loading1" @click="loading1=!loading1">
-    按钮
-  </g-button>
-  <g-button :loading="loading2" icon="setting" icon-position="right" @click="loading2=!loading2">
-    按钮
-  </g-button>
-  <g-button icon="setting" :loading="loading3" @click="loading3=!loading3">
-    按钮
-  </g-button>
-  <g-button-group>
-    <g-button icon="left">后退</g-button>
-    <g-button icon="right" icon-position="right">前进</g-button>
-  </g-button-group>
+
+<!--  html 语法不应该自闭合，添加自闭合，下面的 button 组件就没有了-->
+  <g-input></g-input>
+
+
+  <div>
+    <g-button :loading="loading1" @click="loading1=!loading1">
+      按钮
+    </g-button>
+    <g-button :loading="loading2" icon="setting" icon-position="right" @click="loading2=!loading2">
+      按钮
+    </g-button>
+    <g-button :loading="loading3" icon="setting" @click="loading3=!loading3">
+      按钮
+    </g-button>
+    <g-button-group>
+      <g-button icon="left">后退</g-button>
+      <g-button icon="right" icon-position="right">前进</g-button>
+    </g-button-group>
+  </div>
+
 </div>
 <script src="./src/app.js"></script>
 </body>
