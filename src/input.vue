@@ -13,7 +13,7 @@
 <script lang="js">
   export default {
     // 添加name只是方便调试，google使用Vue插件方便看到
-    // name: 'GuluInput'
+    name: 'GuluInput'
   }
 </script>
 

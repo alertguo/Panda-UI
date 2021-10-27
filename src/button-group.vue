@@ -4,7 +4,9 @@
   </div>
 </template>
 <script>
-
+  export default {
+    name: 'GuluButtonGroup'
+  }
 </script>
 <style lang="scss">
 $border-radius: 4px;
