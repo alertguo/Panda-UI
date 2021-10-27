@@ -3,7 +3,10 @@
     <label>
       <!--      value-值-->
       <input :disabled="disabled" :readonly="readonly" :value="value" type="text"
-      @change="$emit('change',$event)">
+             @blur="$emit('blur',$event)"
+             @change="$emit('change',$event)"
+             @focus="$emit('focus',$event)"
+             @input="$emit('input',$event)">
     </label>
     <!--    直接使用template，可以少一个div，也不用另外加样式-->
     <template v-if="error">
@@ -63,9 +66,11 @@ $red: #F1453D;
   font-size: $font-size;
   display: inline-flex;
   align-items: center;
+
   :not(:last-child) {
     margin-right: .5em;
   }
+
   > label {
     > input {
       height: 32px;
