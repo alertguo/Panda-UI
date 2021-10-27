@@ -4,6 +4,7 @@
 <!--      value-值-->
       <input :value="value" type="text" :disabled="disabled" :readonly="readonly">
     </label>
+<!--    直接使用template，可以少一个div，也不用另外加样式-->
     <template v-if="error">
       <g-icon name="setting"></g-icon>
       <span class="errorMassage">{{error}}</span>
