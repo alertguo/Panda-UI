@@ -9,8 +9,9 @@
     </label>
     <!--    直接使用template，可以少一个div，也不用另外加样式-->
     <template v-if="error">
-      <g-icon class="icon-error" name="error"></g-icon>
-      <span class="errorMassage">{{ error }}</span>
+      <!--      <icon class="icon-error" name="error"></icon>-->
+      <icon class="icon-error" name="error"></icon>
+      <span class="errorMessage">{{ error }}</span>
     </template>
   </div>
 </template>
@@ -29,9 +30,7 @@ import Icon from './icon'
 export default {
   // 添加name只是方便调试，google使用Vue插件方便看到
   name: 'GuluInput',
-  components: {
-    'g-icon': Icon
-  },
+  components: {Icon},
   props: {
     value: {
       type: String
@@ -105,7 +104,7 @@ $red: #F1453D;
     fill: $red;
   }
 
-  .errorMassage {
+  .errorMessage {
     color: red;
   }
 }
