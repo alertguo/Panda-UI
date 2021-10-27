@@ -3,10 +3,10 @@
     <label>
       <!--      value-值-->
       <input :disabled="disabled" :readonly="readonly" :value="value" type="text"
-             @blur="$emit('blur',$event)"
-             @change="$emit('change',$event)"
-             @focus="$emit('focus',$event)"
-             @input="$emit('input',$event)">
+             @blur="$emit('blur',$event.target.value)"
+             @change="$emit('change',$event.target.value)"
+             @focus="$emit('focus',$event.target.value)"
+             @input="$emit('input',$event.target.value)">
     </label>
     <!--    直接使用template，可以少一个div，也不用另外加样式-->
     <template v-if="error">
