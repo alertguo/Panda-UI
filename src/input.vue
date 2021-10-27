@@ -2,7 +2,8 @@
   <div :class="{'error':error}" class="wrapper">
     <label>
       <!--      value-值-->
-      <input :disabled="disabled" :readonly="readonly" :value="value" type="text">
+      <input :disabled="disabled" :readonly="readonly" :value="value" type="text"
+      @change="$emit('change',$event)">
     </label>
     <!--    直接使用template，可以少一个div，也不用另外加样式-->
     <template v-if="error">
